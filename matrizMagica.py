@@ -42,7 +42,7 @@ while(ehMagica == 0):
     if(diagSecundaria != base):
         ehMagica = 0
 
-print("\nMATRIZ\N")
+print("\nMATRIZ\n")
 for i in range(n):
     for j in range(n):
         print("{:5.0f}".format(mat[i][j], end = "\t")
