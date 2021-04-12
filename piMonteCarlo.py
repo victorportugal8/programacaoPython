@@ -5,8 +5,8 @@ qtd = int(input("Quantos pontos deseja? "))
 acertos = 0
 
 for i in range(qtd):
-    x = uniform(-1, 1)
-    y = uniform(-1, 1)
+    x = uniform(0, 1)
+    y = uniform(0, 1)
     d = math.sqrt((float(x ** 2)) + (float(y ** 2)))
     
     if(d <= 1):
