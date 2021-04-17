@@ -26,6 +26,7 @@ for i in range(6):
 sena = []
 qtdSimulacao = 0
 qtdAcertos = 0
+acertos = 0
 
 while(acertos < 6):
 	sena = []
