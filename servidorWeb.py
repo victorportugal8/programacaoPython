@@ -1,12 +1,12 @@
-import web, psutil
+import web
 
-urls = ('/(.*)', 'hello')
-
-app = web.application(urls, globals())
+urls = ('/', 'hello')
 
 class hello:
-    def GET(self, name):
-        if not name:
-            name = 'World'
-        return 'Hello, ' + name + '!' + str(psutil.virtual_memory())
-app.run()
+    def GET(self):
+        name = "Victor"
+        return 'Hello, ' + name + '!'
+
+if __name__ == "__main__":
+    app = web.application(urls, globals())
+    app.run()
